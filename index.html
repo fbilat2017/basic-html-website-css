@@ -22,98 +22,132 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
-    <header>
-        <!-- logo -->
-        <div id="logo">
-            <h1>Fernando Bilat</h1>
+    <header class="header">
+        <div class="sub-header">
+            <!-- logo -->
+            <div class="logo">
+                <img src="img/logo_est.png" alt="logo">
+                <h1>Fernando Bilat</h1>
+            </div>
+            <!-- nav -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li>/</li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li>/</li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li>/</li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- nav -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="frontend">
+            Frontend Developer
+        </div>
+        <div class="frontend-sub">
+            html only with proper layout, not styling
+        </div>
     </header>
 
-    <main>
-        <h2>Frontend Developer</h2>
-        <p>html only proper layout, no styling</p>
+    <div class="container">
 
-        <section id="projects">
-            <h3>Projects</h3>
-            <ul>
-                <li>HTML Only Portfolio</li>
-                <li>Calculator</li>
-                <li>Quiz App</li>
-                <li>Countdown Timer</li>
-                <li>Product Upcoming Page</li>
-            </ul>
+        <div class="columna">
+            <section class="card">
+                <h3>Projects</h3>
+                <span>HTML Only Portfolio</span>
+                <hr>
+                <span>Calculator</span>
+                <hr>
+                <span>Quiz App</span>
+                <hr>
+                <span>Countdown Timer</span>
+                <hr>
+                <span>Product Upcoming Page</span>
+                <hr class="esp">
+            </section>
+        </div>
 
-        </section>
-
-        <section id="experience">
-            <h3>Work Experience</h3>
-            <h4>roadmap.sh</h4>
-            <p>Solved all the frontend projects</p>
-            <p><a href="#">Visit my Profile</a></p>
-        </section>
-
-        <section id="open-source">
-            <h3>OpenSource Work</h3>
-            <p>Contributed to 50 opensource projects. made my own projects with 200 GitHub Stars.</p>
-            <p><a href="#">Visit my GitHub Profile</a></p>
-        </section>
-
-        <section id="education">
-            <h3>Education</h3>
-            <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
-            <p>Courses I took:</p>
-            <ul>
-                <li>Objets Oriented Programming</li>
-                <li>Data Structures and Algorithms</li>
-                <li>Web Engineering </li>
-                <li>Human Computer Interaction </li>
-                <li>Computer Graphics </li>
-                <li>Database Management Systems </li>
-                <li>Distributed Database Systems </li>
-                <li>Discreet Mathematics </li>
-            </ul>
-        </section>
-        <section id="reviews">
-            <div>
-                <p>John doe was a brilliant student, always stood out with his assignments. <br>
-                <div class="sub">
-                    <p> <i>John Doe</i></p>
+        <div class="columna">
+            <section>
+                <h3>Work Experience</h3>
+                <div>
+                    <h4>roadmap.sh</h4>
+                    <p>Solved all the frontend projects</p>
+                    <p><a href="#">Visit my Profile</a></p>
                 </div>
-                </p>
-            </div>
-            <div>
-                <p>John doe was a brilliant student, always stood out with his assignments. <br>
-                <div class="sub">
-                    <p> <i>John Doe</i></p>
+            </section>
+            <hr>
+            <section>
+                <h3>OpenSource Work</h3>
+                <div>
+                    <p>Contributed to 50 opensource projects. made my own projects with 200 GitHub Stars.</p>
+                    <p><a href="#">Visit my GitHub Profile</a></p>
                 </div>
-                </p>
-            </div>
-            <div>
-                <p>John doe was a brilliant student, always stood out with his assignments. <br>
-                <div class="sub">
-                    <p> <i>John Doe</i></p>
+            </section>
+        </div>
+
+        <div class="columna">
+            <section>
+                <h3>Education</h3>
+                <div>
+                    <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+                    <p>Courses I took:</p>
                 </div>
-                </p>
+                <ul>
+                    <li>Objets Oriented Programming</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Web Engineering </li>
+                    <li>Human Computer Interaction </li>
+                    <li>Computer Graphics </li>
+                    <li>Database Management Systems </li>
+                    <li>Distributed Database Systems </li>
+                    <li>Discreet Mathematics </li>
+                </ul>
+            </section>
+        </div>
+
+    </div>
+
+    <section>
+
+        <h3>Reviwes from my Teachers</h3>
+
+        <div class="reviews">
+            <div class="sub">
+                <p>John doe was a brilliant student, always stood out with his assignments.</p>
+                <span>John Doe</span>
             </div>
 
-        </section>
+            <div class="sub">
+                <p>John doe was a brilliant student, always stood out with his assignments.</p>
+                <span>John Doe</span>
+            </div>
 
-    </main>
+            <div class="sub">
+                <p>John doe was a brilliant student, always stood out with his assignments.</p>
+                <span>John Doe</span>
+            </div>
 
-    <footer>
-        <p>&copy; all rights reserved 2026</p>
+
+        </div>
+
+
+    </section>
+
+    <footer class="footer">
+        <h3>&copy; all rights reserved 2026</h3>
     </footer>
 
 </body>

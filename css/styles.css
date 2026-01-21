@@ -1,0 +1,251 @@
+/* Media Query para pantallas más grandes (escritorio) */
+@media screen and (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    h3 {
+        font-family: "Petit Formal Script", cursive;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    }
+
+
+    .columna {
+        background-color: #f2f2f2;
+        padding: 0px;
+        text-align: left;
+    }
+
+    .reviews {
+        display: flex;
+
+    }
+
+    .sub-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+    .container {
+        display: block;
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3 {
+        font-family: "Petit Formal Script", cursive;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+
+    .columna {
+        background-color: #a09c9c33;
+        padding: 20px;
+        text-align: left;
+        padding: 0px;
+    }
+
+    .esp {
+        border-style: hidden;
+    }
+
+    .sub-header {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .card {
+        text-align: center;
+
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo h1 {
+        padding-bottom: 25px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+.header {
+    border: #000 2px solid;
+    padding: 0 10px 50px 10px;
+    margin-bottom: 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.frontend {
+    font-family: "Petit Formal Script", cursive;
+    font-weight: 400;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.frontend-sub {
+    color: rgb(77, 81, 85);
+    text-align: center;
+}
+
+
+.card {
+    padding: 0px;
+    margin: 0px;
+}
+
+.sub {
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 25px;
+    padding: 15px;
+}
+
+.sub span {
+    color: rgb(119, 120, 121);
+}
+
+.columna {
+    border: #000 2px solid;
+
+}
+
+.columna span {
+    padding-left: 15px;
+}
+
+section div {
+    padding-left: 15px;
+
+}
+
+section a {
+    text-decoration: none;
+    color: rgb(41, 70, 231);
+}
+
+.article {
+    padding: 10px;
+}
+
+hr {
+    border: solid 1px #000;
+
+}
+
+h2 {
+    font-family: "Petit Formal Script", cursive;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    border: #000 1px solid;
+    margin-top: 15px;
+}
+
+.my-projects {
+    margin: 15px;
+    padding: 10px;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 15px;
+}
+
+.contact-form {
+
+    padding: 15px;
+}
+
+form {
+    right: 400px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact {
+    padding: 10px;
+}
+
+.footer {
+
+    text-align: center;
+    padding: 10px;
+}

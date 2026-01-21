@@ -5,15 +5,15 @@
     <!-- HTML Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page of projects" />
+    <meta name="description" content="Junior Frontend Developer" />
     <meta name="author" content="Fernando Bilat" />
-    <title>Web Page - Projects</title>
+    <title>Web Page - Index</title>
 
     <!-- Open Graph Tags -->
     <meta property="og:url" content="https://www.fernando.bilat.com/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="fernando.bilat.com">
-    <meta property="og:description" content="Fernando Bilat - Projects>
+    <meta property="og:description" content="Fernando Bilat - Junior Frontend Developer">
     <meta property="og:image" content="https://cdn.example.png">
 
     <!-- Favicon -->
@@ -22,28 +22,48 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
-    <header>
-        <!-- logo -->
-        <div id="logo">
-            <h1>Fernando Bilat</h1>
-        </div>
-        <!-- nav -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li>Projects</li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
+    <header class="header">
+        <div class="sub-header">
+            <!-- logo -->
+            <div class="logo">
+                <img src="img/logo_est.png" alt="logo">
+                <h1>Fernando Bilat</h1>
+            </div>
+            <!-- nav -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li>/</li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li>/</li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li>/</li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="frontend">
+            Frontend Developer
+        </div>
+        <div class="frontend-sub">
+            html only with proper layout, not styling
+        </div>
+    </header>
     <main>
         <h2>Projects</h2>
-        <p>My Projects</p>
+        <hr>
 
         <section class="my-projects">
             <h3>HTML Only Portfolio</h3>
@@ -52,6 +72,7 @@
                 perspiciatis magni sequi.</p>
             <p><a href="#" target="_blank">View Project</a></p>
         </section>
+        <hr>
 
         <section class="my-projects">
             <h3>Calculator</h3>
@@ -60,7 +81,7 @@
                 perspiciatis magni sequi.</p>
             <p><a href="#" target="_blank">View Project</a></p>
         </section>
-
+        <hr>
         <section class="my-projects">
             <h3>Quiz App</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ad veritatis, labore accusamus neque
@@ -68,7 +89,7 @@
                 perspiciatis magni sequi.</p>
             <p><a href="#" target="_blank">View Project</a></p>
         </section>
-
+        <hr>
         <section class="my-projects">
             <h3>Countdown Timer</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ad veritatis, labore accusamus neque
@@ -76,7 +97,7 @@
                 perspiciatis magni sequi.</p>
             <p><a href="#" target="_blank">View Project</a></p>
         </section>
-
+        <hr>
         <section class="my-projects">
             <h3>Product Upcoming Page</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ad veritatis, labore accusamus neque
@@ -88,8 +109,8 @@
 
     </main>
 
-    <footer>
-        <p>&copy; all rights reserved 2026</p>
+    <footer class="footer">
+        <h3>&copy; all rights reserved 2026</h3>
     </footer>
 
 </body>
